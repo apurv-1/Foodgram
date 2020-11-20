@@ -32,7 +32,7 @@ const Home = () => {
 			.then((result) => {
 				// console.log(result)
 				const newData = data.map((item) => {
-					if (item._id == result._id) {
+					if (item._id === result._id) {
 						return result;
 					} else {
 						return item;
@@ -60,7 +60,7 @@ const Home = () => {
 			.then((result) => {
 				//console.log(result)
 				const newData = data.map((item) => {
-					if (item._id == result._id) {
+					if (item._id === result._id) {
 						return result;
 					} else {
 						return item;
@@ -89,7 +89,7 @@ const Home = () => {
 			.then((result) => {
 				console.log(result);
 				const newData = data.map((item) => {
-					if (item._id == result._id) {
+					if (item._id === result._id) {
 						return result;
 					} else {
 						return item;
@@ -127,11 +127,11 @@ const Home = () => {
 							<div className="card home-card" key={item._id}>
 								<h5>
 									<div className="upper-profile">
-										<Link to={item.postedBy._id != state._id ? "/profile/" + item.postedBy._id : "/profile"}>
+										<Link to={item.postedBy._id !== state._id ? "/profile/" + item.postedBy._id : "/profile"}>
 											<img className="small-pic" src={state.pic} />
 											<span className="te">{item.postedBy ? item.postedBy.name : "loading"}</span>
 										</Link>
-										{item.postedBy._id == state._id && (
+										{item.postedBy._id === state._id && (
 											<i
 												className="material-icons"
 												style={{ float: "right", color: "red" }}
