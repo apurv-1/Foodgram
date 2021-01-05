@@ -45,11 +45,11 @@ const NavBar = () => {
 	return (
 		<nav>
 			<div className="nav-wrapper grey">
-				<img
+				{/* <img
 					src="https://res.cloudinary.com/vlk/image/upload/v1595691220/icon_ip0cmr.png"
 					className="welcome-logo"
-				/>
-				<Link to={state ? "/" : "/signup"} className="brand-logo center">
+				/> */}
+				<Link to={state ? "/" : "/signup"} className="brand-logo">
 					Foodgram
 				</Link>
 				<ul id="nav-mobile" className="right">

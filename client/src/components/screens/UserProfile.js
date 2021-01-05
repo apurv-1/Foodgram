@@ -7,7 +7,8 @@ const Profile = () => {
 	const { state, dispatch } = useContext(UserContext);
 	const { userid } = useParams();
 	const [showfollow, setShowfollow] = useState(state ? !state.following.includes(userid) : true);
-	console.log(userid);
+	// console.log(userid);
+
 	useEffect(() => {
 		fetch(`/user/${userid}`, {
 			headers: {

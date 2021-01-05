@@ -5,8 +5,10 @@ import { Link } from "react-router-dom";
 const Home = () => {
 	const [data, setData] = useState([]);
 	const { state } = useContext(UserContext);
+
 	useEffect(() => {
 		fetch("/followingpost", {
+			method: "get",
 			headers: {
 				Authorization: "Bearer " + localStorage.getItem("jwt"),
 			},

@@ -7,6 +7,7 @@ const Home = () => {
 	const { state } = useContext(UserContext);
 	useEffect(() => {
 		fetch("/allpost", {
+			method: "put",
 			headers: {
 				Authorization: "Bearer " + localStorage.getItem("jwt"),
 			},
@@ -128,7 +129,7 @@ const Home = () => {
 								<h5>
 									<div className="upper-profile">
 										<Link to={item.postedBy._id !== state._id ? "/profile/" + item.postedBy._id : "/profile"}>
-											<img className="small-pic" src={state.pic} />
+											<img className="small-pic" src={item.postedBy.pic} />
 											<span className="te">{item.postedBy ? item.postedBy.name : "loading"}</span>
 										</Link>
 										{item.postedBy._id === state._id && (
@@ -166,7 +167,7 @@ const Home = () => {
 									<span className="likes">{item.likes.length} likes</span>
 
 									<p>
-										<span class="cap-name">{item.postedBy.name}</span>
+										<span className="cap-name">{item.postedBy.name}</span>
 										{item.body}
 									</p>
 									{item.comments.map((record) => {
