@@ -83,7 +83,7 @@ $ npm run build
 ```bash
 # running locally
 # in root directory
-$ npm myapp.js
+$ node myapp.js or npm start
 ```
 
 ## :page_with_curl: Workflow
