@@ -103,7 +103,7 @@ const Signup = () => {
 				</div>
 				<button
 					className="btn waves-effect waves-light #42a5f5 blue darken-1"
-					style={{ width: "360px", marginTop: "15px" }}
+					style={{ width: "90%", marginTop: "15px",zIndex:"0" }}
 					onClick={() => PostData()}>
 					Signup
 				</button>

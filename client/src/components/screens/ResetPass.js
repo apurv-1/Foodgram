@@ -52,7 +52,7 @@ const ResetPass = () => {
 
 				<button
 					className="btn waves-effect waves-light #42a5f5 blue darken-1"
-					style={{ width: "360px", marginTop: "20px" }}
+					style={{ width: "90%", marginTop: "20px",zIndex:"0" }}
 					onClick={() => PostData()}>
 					Reset Password
 				</button>

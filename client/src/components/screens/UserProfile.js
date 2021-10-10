@@ -93,7 +93,7 @@ const Profile = () => {
 						<div>
 							<h4>{userProfile.user.name}</h4>
 							<h6>{userProfile.user.email}</h6>
-							<div style={{ display: "flex", justifyContent: "space-between", width: "90%" }}>
+							<div style={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
 								<h6>
 									<b>{userProfile.posts.length}</b>posts
 								</h6>
