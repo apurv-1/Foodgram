@@ -82,7 +82,7 @@ const CreatePost = () => {
 			/>
 			<button
 				className="btn waves-effect waves-light #42a5f5 blue darken-1"
-				style={{ width:"90%",maxWidth: "360px", marginTop: "15px" }}
+				style={{ width:"90%",maxWidth: "360px", marginTop: "15px",margin:"auto" }}
 				onClick={() => postDetails()}>
 				Post
 			</button>
