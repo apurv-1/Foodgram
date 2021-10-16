@@ -63,7 +63,6 @@ const CreatePost = () => {
 				maxWidth: "400px",
 				padding: "20px",
 				textAlign: "center",
-				zIndex: -2
 			}}>
 			<div className="file-field input-field">
 				<div className="btn #42a5f5 blue darken-1">
@@ -82,7 +81,7 @@ const CreatePost = () => {
 			/>
 			<button
 				className="btn waves-effect waves-light #42a5f5 blue darken-1"
-				style={{ width:"90%",maxWidth: "360px", marginTop: "15px",margin:"auto" }}
+				style={{ width: "360px", marginTop: "15px" }}
 				onClick={() => postDetails()}>
 				Post
 			</button>
